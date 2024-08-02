@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && cp -r dist/"
-  },
-  "author": "",
-  "license": "ISC",
+"scripts": {
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "clean": "rm -rf dist",
+  "build": "npm run clean && mkdir dist && rsync -av --exclude='dist' ./ dist/"
+},
+  "author": "Mugunth",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.0",
