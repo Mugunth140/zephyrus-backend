@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && cp -r src/* dist/"
+    "build": "npm run clean && mkdir dist && cp -r dist/"
   },
   "author": "",
   "license": "ISC",
